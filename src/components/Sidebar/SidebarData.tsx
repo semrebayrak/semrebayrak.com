@@ -5,11 +5,11 @@ export const SidebarData: SidebarItemProps[] = [
     path: '/about',
   },
   {
-    title: 'My Skills',
+    title: 'Skills',
     path: '/skills',
   },
   {
-    title: 'Work Experience',
+    title: 'Experience',
     path: '/experience',
   },
   {
