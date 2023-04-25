@@ -115,7 +115,10 @@ section {
   overflow: scroll;
   transition: all 0.3s ease-in-out;
   padding-top: $top-offset;
+}
 
+.main-body:has(.main-page) {
+  overflow: hidden;
 }
 
 
