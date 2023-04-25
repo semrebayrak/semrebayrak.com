@@ -24,13 +24,37 @@ export const ExperienceList: Experience[] = [
     ],
   },
   {
+    logoPath: 'mastio.png',
+    company: 'Mastio',
+    location: 'Istanbul, Turkey',
+    startDate: 'May 2020',
+    endDate: 'March 2023',
+    description:
+      "Buildig web3 applications using React.js, Next.js, SASS, Tailwind, Web3.js and Etherium.js",
+    jobTitle: 'Full Stack Developer',
+    head: 'Technologies used',
+    technologies: [
+      'MongoDB',
+      'Next.js',
+      'Tailwind CSS',
+      'Redux.js',
+      'Redux Saga',
+      'React.js',
+      'Javascript',
+      'Typescript',
+      'Etherium.js',
+      'SASS',
+      'Web3.js',
+    ],
+  },
+  {
     logoPath: 'vodafone.png',
     company: 'Vodafone',
     location: 'Istanbul, Turkey',
-    startDate: 'Work duration: October 2021 -',
+    startDate: 'October 2021',
     endDate: 'March 2022',
     description:
-      "We were providing support and development for the product as an outsource company through the company I worked for, which provided the customer panel for your internet service at Vodafone.",
+      "I was employed by a company that provided support and development for the customer panel of Vodafone's internet service as an outsourced company.",
     jobTitle: 'Full Stack Developer',
     head: 'Technologies used',
     technologies: [
@@ -69,6 +93,43 @@ export const ExperienceList: Experience[] = [
       'Model-View-Controller (MVC)',
       'JavaScript',
       'ASP.NET MVC',
+    ],
+  },
+  {
+    logoPath: 'ustek.png',
+    company: 'USTEK RFID SOLUTIONS',
+    location: 'Istanbul, Turkey',
+    startDate: 'May 2019',
+    endDate: 'November 2019',
+    description:
+      "I developed RFID based mobile applications using Java and REST APIs",
+    jobTitle: 'Intern',
+    head: 'Technologies used',
+    technologies: [
+      'Java',
+      'REST APIs',
+      'JSON Web Token (JWT)',
+      'Radio-Frequency Identification (RFID)',
+      'Mobile Applications',
+    ],
+  },
+  {
+    logoPath: 'pals.png',
+    company: 'PALS ELECTRONICS',
+    location: 'Istanbul, Turkey',
+    startDate: 'November 2018',
+    endDate: 'May 2019',
+    description:
+      "Building RFID based systems using Arduino and C. I also developed a mobile application for the system I developed.",
+    jobTitle: 'Intern',
+    head: 'Technologies used',
+    technologies: [
+      'Arduino',
+      'C',
+      'Java',
+      'Radio-Frequency Identification (RFID)',
+      'Mobile Applications',
+
     ],
   },
 ]

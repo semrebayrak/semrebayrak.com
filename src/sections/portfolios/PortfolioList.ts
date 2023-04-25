@@ -4,7 +4,7 @@ export const PortfolioList: Portfolio[] = [
   {
     logoPath: 'opinate.svg',
     description:
-      "desc",
+      "A Medium like platform for developers to share their opinions about technologies. It has countless features like commenting, liking, sharing, and more. It is a full-stack application that uses Next.js, Redux, Redux Saga, Tailwind CSS, and Altogic(BAAS).",
     productTitle: 'Opinate',
     head: 'Technologies used',
     technologies: [
@@ -20,7 +20,7 @@ export const PortfolioList: Portfolio[] = [
   {
     logoPath: 'disscusy.png',
     description:
-      "desc",
+      "A forum platform for developers to share their opinions about technologies. It has countless features like commenting, liking, sharing, and more. It is a full-stack application that uses Next.js, Redux, Redux Saga, Tailwind CSS, and Altogic(BAAS).",
     productTitle: 'Disscusy',
     head: 'Technologies used',
     technologies: [
@@ -36,7 +36,7 @@ export const PortfolioList: Portfolio[] = [
   {
     logoPath: 'halkekmek.png',
     description:
-      "desc",
+      "Collaboratively created 'Halk Ekmek' app for Istanbul Municipality, showcasing expertise in Flutter, project management, and customer-centric solutions. Enhances portfolio and demonstrates ability to deliver efficient mobile apps.",
     productTitle: 'Halk Ekmek',
     head: 'Technologies used',
     technologies: [
@@ -52,23 +52,37 @@ export const PortfolioList: Portfolio[] = [
   {
     logoPath: 'ariva.webp',
     description:
-      "desc",
-    productTitle: 'Ariva Web',
+      "Mobile Application using Flutter to develop a secure platform for buying plane tickets with blockchain Web3. Showcased expertise in cutting-edge technologies, innovative solutions, and created an impressive portfolio",
+    productTitle: 'Ariva World Mobile App',
+    head: 'Technologies used',
+    technologies: [
+      'Flutter',
+      'Flutter Web3',
+      'GetX '
+    ],
+  },
+  {
+    logoPath: 'ariva.webp',
+    description:
+      "Mobile Application using Next.js, Redux Saga to develop a secure platform for buying plane tickets with blockchain Web3. Showcased expertise in cutting-edge technologies, innovative solutions, and created an impressive portfolio",
+    productTitle: 'Ariva World Web App',
     head: 'Technologies used',
     technologies: [
       'Next.js',
       'Redux',
       'Redux Saga',
       'Tailwind CSS',
-      'JavaSciprt',
+      'Javascript',
+      'Typecript',
       'ESLint',
-      'MondoDB',
+      'Etherium.js',
+      'Web3.js',
     ],
   },
   {
     logoPath: 'ariva-game.png',
     description:
-      "desc",
+      "A website for Web3 based game which is using Etherium blockchain.",
     productTitle: 'Ariva Game',
     head: 'Technologies used',
     technologies: [
@@ -76,9 +90,11 @@ export const PortfolioList: Portfolio[] = [
       'Redux',
       'Redux Saga',
       'Tailwind CSS',
-      'JavaSciprt',
+      'Javascript',
       'ESLint',
-      'MondoDB',
+      'Typecript',
+      'Etherium.js',
+      'Web3.js',
     ],
   },
 ]

@@ -9,7 +9,7 @@ const ExperienceDetails: FC<ExperienceDetailsProps> = ({
       <p className="experience-details-title">{item?.jobTitle}</p>
       <p className="experience-details-description">{item?.description}</p>
       <p className="experience-details-date">
-        {item?.startDate} {item?.endDate}
+        {item?.startDate} - {item?.endDate}
       </p>
       <p className="experience-details-date">{item?.location}</p>
       <p className="tech-stack"></p>

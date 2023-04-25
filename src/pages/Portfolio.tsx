@@ -32,14 +32,18 @@ export const Portfolio: FC = () => {
                             </div>
                             <div
                                 className="info colorful-border">
-                                <h4>{item.head}</h4>
+                                <h4>Description</h4>
                                 <p className="description">{item.description}</p>
+                                <h4>{item.head}</h4>
+                                {
+                                    item.technologies.join(', ')
+                                }
                             </div>
                         </div>
                     ))
                 }
             </div>
-           
+
 
 
         </section>
