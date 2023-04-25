@@ -1,0 +1,83 @@
+section {
+  
+  &::before {
+    opacity: 0.3;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 20.5%;
+    top: 1.5%;
+    color: #879695;
+    font-family: 'La Belle Aurore', cursive !important;
+    transition: all 0.2s ease-in-out;
+    cursor: text;
+    content: '<body>';
+  }
+  &::after {
+    opacity: 0.3;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    color: #879695;
+    font-family: 'La Belle Aurore', cursive !important;
+    transition: all 0.2s ease-in-out;
+    cursor: text;
+    content: '</body>';
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  section {
+    &::before {
+      font-size: 1.4rem;
+    }
+    &::after {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1281px) {
+  section {
+    &::before {
+      font-size: 1rem;
+    }
+    &::after {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    &::before {
+      font-size: 0.8rem;
+    }
+    &::after {
+      font-size: 0.8rem;
+    }
+  }
+}
+@media screen and (max-width: 641px) {
+  section {
+    &::before {
+      left: 5%;
+      font-size: 0.6rem;
+    }
+    &::after {
+      font-size: 0.6rem;
+    }
+  }
+}
+@media screen and (max-width: 481px) {
+  section {
+    &::before {
+      font-size: 0.4rem;
+    }
+    &::after {
+      font-size: 0.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+}

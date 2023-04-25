@@ -1,0 +1,117 @@
+.about {
+  margin: 0;
+  padding-left: 5%;
+
+  .about-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .image-wrapper {
+      position: relative;
+      width: 173px;
+      height: 173px;
+      top: 25vh;
+
+      .picture-wrapper {
+        position: relative;
+
+        .selfie {
+          position: absolute;
+          z-index: 2;
+          right: 7em;
+          width: 173px;
+          height: 173px;
+          border-radius: 50%;
+          background-clip: padding-box, border-box;
+          background-origin: border-box;
+        }
+
+        .picture-background {
+          position: absolute;
+          right: 4.4em;
+          top: -33px;
+          z-index: 1;
+          width: 250px;
+          height: 250px;
+          border-radius: 50%;
+          background-clip: padding-box, border-box;
+          background-origin: border-box;
+        }
+      }
+    }
+
+    .header {
+      &> :first-child {
+        position: relative;
+
+        &::before {
+          content: '<h1>';
+          color: #879695;
+          opacity: 0.3;
+          top: -1rem;
+          left: -2rem;
+          position: absolute;
+          cursor: text;
+        }
+      }
+
+      &> :last-child {
+        position: relative;
+
+        &::after {
+          content: '</h1>';
+          position: absolute;
+          color: #879695;
+          bottom: -1rem;
+          right: -4rem;
+          opacity: 0.3;
+          cursor: text;
+        }
+      }
+    }
+  }
+
+  .about-me-text {
+    width: 60%;
+    font-size: 16px;
+    text-align: justify;
+    color: #e5dbd5;
+
+    span {
+      transition: all 0.5s ease-in-out;
+      display: inline-block;
+    }
+  }
+}
+
+.highlight {
+  span {
+    -webkit-animation: color-change 1.5s linear infinite alternate both;
+    animation: color-change 1.5s linear infinite alternate both;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .about {
+    .about-heading {
+      
+      & h1 {
+        display: none;
+      }
+      flex-direction: column;
+
+      .image-wrapper {
+        top:0;
+        margin-bottom: 3rem;
+        left: 6.4rem;
+      }
+    }
+
+    .about-me-text {
+      width: 90% !important;
+    }
+  }
+
+}
