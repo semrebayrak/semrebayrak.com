@@ -51,8 +51,8 @@ export const ExperienceList: Experience[] = [
     logoPath: 'vodafone.png',
     company: 'Vodafone',
     location: 'Istanbul, Turkey',
-    startDate: 'October 2021',
-    endDate: 'March 2022',
+    startDate: 'January 2022',
+    endDate: 'May 2022',
     description:
       "I was employed by a company that provided support and development for the customer panel of Vodafone's internet service as an outsourced company.",
     jobTitle: 'Full Stack Developer',
@@ -76,7 +76,7 @@ export const ExperienceList: Experience[] = [
     company: 'Labdroids Information Technologies',
     location: 'Istanbul, Turkey',
     startDate: 'January 2022',
-    endDate: 'June 2022',
+    endDate: 'May 2022',
     description:
       "I was involved in both backend and frontend development, working on new projects based on customer requirements and updating existing projects to meet current needs. Overall, I played a key role in developing software solutions that met the customers' needs and contributed to the smooth operation of the team.I gained experience in project management, teamwork, and Agile methodology.",
     jobTitle: 'Full Stack Developer',
@@ -117,8 +117,8 @@ export const ExperienceList: Experience[] = [
     logoPath: 'pals.png',
     company: 'PALS ELECTRONICS',
     location: 'Istanbul, Turkey',
-    startDate: 'November 2018',
-    endDate: 'May 2019',
+    startDate: 'November 2019',
+    endDate: 'May 2020',
     description:
       "Building RFID based systems using Arduino and C. I also developed a mobile application for the system I developed.",
     jobTitle: 'Intern',

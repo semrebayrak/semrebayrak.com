@@ -101,8 +101,9 @@
 }
 
 small {
-  position: relative;
+  flex-wrap: wrap;
   display: flex;
+  position: relative;
   width: fit-content;
   flex-direction: row;
   align-items: center;
@@ -155,6 +156,8 @@ small {
 
   small {
     font-size: x-small;
+    width: 80%;
+
   }
 
   .header {
