@@ -30,9 +30,8 @@ export const ContactMe: FC = () => {
     if (validName && validEmail && validSubject && validMessage) {
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
         .then((result: any) => {
-          console.log(result.text);
         }, (error: any) => {
-          console.log(error.text);
+          // console.log(error.text);
         });
     }
     if (!loading && success) clearState()
