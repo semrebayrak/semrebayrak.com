@@ -29,12 +29,12 @@ const Sidebar: FC = () => {
 
   return (
     <aside className={'sidebar-nav' + (sidebarShow ? ' hidden' : '')}>
-      <div className="logo-wrapper">
+      <a className='logo-wrapper' href="/">
         <img
           width={'80%'}
           src={Logo}
         />
-      </div>
+      </a>
       <div className="sidebar-items-wrapper">
         {SidebarData.map((item, index) => {
           return <Submenu match={match} path={item.path} title={item.title} key={index} />
