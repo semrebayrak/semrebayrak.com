@@ -7,6 +7,9 @@ import { validateField } from '../helpers/checkEmpy'
 import { useAxios } from '../helpers/useAxios'
 import emailjs from '@emailjs/browser';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID as string
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID as string
 const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY as string
@@ -21,15 +24,30 @@ export const ContactMe: FC = () => {
   const [validEmail, setValidEmail] = useState<boolean>(true)
   const [validSubject, setValidSubject] = useState<boolean>(true)
   const [validMessage, setValidMessage] = useState<boolean>(true)
+  const [isClicked, setIsClicked] = useState<boolean>(false)
   const { loading, error, success, fetch } = useAxios()
   const ref = useRef<HTMLElement>(null)
   const form = useRef<any>();
 
+  const checkForm = () => {
+    if (name !== '' && email !== '' && subject !== '' && message !== '') {
+      return true
+    }
+    return false
+  }
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
     e.preventDefault()
-    if (validName && validEmail && validSubject && validMessage) {
+    if (validName && validEmail && validSubject && validMessage && checkForm() && !isClicked) {
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
         .then((result: any) => {
+          toast.success('Email sent successfully!',
+            {
+              theme: 'dark',
+            }
+          )
+          setIsClicked(true)
         }, (error: any) => {
           // console.log(error.text);
         });
@@ -48,6 +66,7 @@ export const ContactMe: FC = () => {
 
   return (
     <section className="contact">
+      <ToastContainer />
       <div className="contact-heading-wrapper">
         <Heading lines={['Contact me'.split(' ')]} />
       </div>
@@ -129,7 +148,7 @@ export const ContactMe: FC = () => {
         )}
         <div className="contact-button-wrapper row-end">
           <Button
-            children={'Send message!'}
+            children={!isClicked ? 'Done' : 'Send message!'}
             type="submit"
             classname={'form-submit'}
           />
