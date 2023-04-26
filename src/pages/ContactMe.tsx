@@ -148,7 +148,7 @@ export const ContactMe: FC = () => {
         )}
         <div className="contact-button-wrapper row-end">
           <Button
-            children={!isClicked ? 'Done' : 'Send message!'}
+            children={isClicked ? 'Done' : 'Send message!'}
             type="submit"
             classname={'form-submit'}
           />
